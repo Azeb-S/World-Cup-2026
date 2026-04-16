@@ -43,3 +43,55 @@
 .nav a:hover {
     color: var(--text-primary);
 }
+
+.nav a {
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    transition: color 0.25s ease;
+}
+
+
+/* underline animation */
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--red);
+    transition: width 0.25s ease;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.25s ease;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+.header button {
+    transition: all 0.25s ease;
+}
+
+.header button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+}
+
+.header button:active {
+    transform: scale(0.97);
+}

@@ -1,0 +1,85 @@
+.countdown {
+    padding: 100px 40px;
+    text-align: center;
+    background-color: var(--bg-main);
+}
+
+.countdown-title {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.countdown-text {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.countdown-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.countdown-card {
+    padding: 50px 20px;
+    border-radius: 24px;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.countdown-card:hover {
+    transform: translateY(-8px) scale(1.04);
+}
+
+.countdown-card:active {
+    transform: scale(0.97);
+}
+
+.countdown-card h3 {
+    font-family: var(--font-display);
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.countdown-card p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.days {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.hours {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.minutes {
+    background: linear-gradient(135deg, #059669, #047857);
+}
+
+.seconds {
+    background: linear-gradient(135deg, #d97706, #b45309);
+}
+
+.days:hover {
+    box-shadow: 0 0 25px rgba(220, 38, 38, 0.6);
+}
+
+.hours:hover {
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.6);
+}
+
+.minutes:hover {
+    box-shadow: 0 0 25px rgba(5, 150, 105, 0.6);
+}
+
+.seconds:hover {
+    box-shadow: 0 0 25px rgba(217, 119, 6, 0.6);
+}

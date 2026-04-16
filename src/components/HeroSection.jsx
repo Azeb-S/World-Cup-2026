@@ -1,4 +1,6 @@
 import "./HeroSection.css"
+import { Users, MapPin, Trophy, Globe } from "lucide-react"
+
 function HeroSection() {
  return (
   <section className="hero">
@@ -13,35 +15,43 @@ function HeroSection() {
    </p>
 
    <div className="hero-buttons">
-    <button>Explore Tournament</button>
-    <button>Watch Trailer</button>
+    <button className="btn-primary">Explore Tournament</button>
+    <button className="btn-secondary">Watch Trailer</button>
    </div>
-
    <div className="hero-stats">
     <div className="stat-card">
-     <div>Icon</div>
+     <div className="stat-icon">
+      <Users size={28} />
+     </div>
      <h3>48</h3>
      <p>Teams</p>
     </div>
 
     <div className="stat-card">
-     <div>Icon</div>
+     <div className="stat-icon">
+      <MapPin size={28} />
+     </div>
      <h3>16</h3>
      <p>Cities</p>
     </div>
 
     <div className="stat-card">
-     <div>Icon</div>
+     <div className="stat-icon">
+      <Trophy size={28} />
+     </div>
      <h3>104</h3>
      <p>Matches</p>
     </div>
 
     <div className="stat-card">
-     <div>Icon</div>
+     <div className="stat-icon">
+      <Globe size={28} />
+     </div>
      <h3>3</h3>
      <p>Countries</p>
     </div>
    </div>
+
   </section>
  )
 }
