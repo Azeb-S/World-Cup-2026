@@ -1,0 +1,154 @@
+/* bracket section */
+.bracket {
+  background-color: var(--bg-main);
+}
+
+/* round tabs row */
+.bracket-tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* single tab button */
+.bracket-tab {
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-body);
+}
+
+/* active tab */
+.bracket-tab.active {
+  background-color: var(--red);
+  color: white;
+  border-color: var(--red);
+}
+
+.bracket-tab:hover:not(.active) {
+  border-color: rgba(220, 38, 38, 0.4);
+  color: white;
+}
+
+/* grid of match cards - 4 columns for r32, adjusts for later rounds */
+.bracket-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* single match card */
+.bracket-match {
+  background: linear-gradient(135deg, #161b2e, #1e293b);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* match number label */
+.bracket-match-num {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* team button */
+.bracket-team {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.bracket-team:hover:not(.empty) {
+  background-color: rgba(220, 38, 38, 0.15);
+  border-color: rgba(220, 38, 38, 0.4);
+}
+
+/* selected winner */
+.bracket-team.winner {
+  background: linear-gradient(to right, rgba(220, 38, 38, 0.3), rgba(220, 38, 38, 0.1));
+  border-color: var(--red);
+}
+
+/* placeholder slot */
+.bracket-team.empty {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: default;
+  border-style: dashed;
+}
+
+/* vs text */
+.bracket-vs {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* prev and next buttons row */
+.bracket-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.bracket-nav .btn-primary,
+.bracket-nav .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* champion box */
+.bracket-champion {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.bracket-champion-label {
+  font-size: 0.85rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bracket-champion-name {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--gold);
+  letter-spacing: 3px;
+}

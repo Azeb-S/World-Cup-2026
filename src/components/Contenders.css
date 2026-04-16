@@ -1,0 +1,28 @@
+/* contenders section wrapper */
+.contenders {
+  background-color: var(--bg-main);
+}
+
+/* 5 columns grid */
+.contenders-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+/* center the show more button */
+.contenders-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* fade animation when cards rotate */
+.contenders-card-wrap {
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,125 @@
+/* matches section wrapper */
+.matches {
+  background-color: var(--bg-main);
+}
+
+/* 3 columns grid */
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* single match card with gradient */
+.match-card {
+  background: linear-gradient(135deg, #161b2e, #1e293b);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* red glow top left corner */
+.match-card::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.15), transparent);
+  border-radius: 50%;
+}
+
+/* hover lift and red glow */
+.match-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(220, 38, 38, 0.4);
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.12);
+}
+
+/* top row */
+.match-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* red label badge */
+.match-label {
+  background: linear-gradient(to right, var(--red), var(--red-dark));
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+/* opening match gold label */
+.match-label.opening {
+  background: linear-gradient(to right, var(--gold), var(--gold-dark));
+  color: #000;
+}
+
+/* time with icon */
+.match-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* teams row */
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* team name */
+.match-team {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+/* vs badge */
+.match-vs {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* divider line */
+.match-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* bottom row */
+.match-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* date and city with icons */
+.match-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}

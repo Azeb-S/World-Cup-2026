@@ -1,0 +1,6 @@
+// my partner fills this part
+function HeroSection() {
+  return <div></div>
+}
+
+export default HeroSection
