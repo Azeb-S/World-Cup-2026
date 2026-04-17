@@ -83,3 +83,41 @@
 .seconds:hover {
     box-shadow: 0 0 25px rgba(217, 119, 6, 0.6);
 }
+
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+    .countdown-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 640px) {
+    .countdown {
+        padding: 70px 20px 50px;
+    }
+    .countdown-title {
+        font-size: 2.8rem;
+    }
+    .countdown-text {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    .countdown-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .countdown-card {
+        padding: 35px 20px;
+    }
+    .countdown-card h3 {
+        font-size: 3.8rem;
+    }
+    .countdown-card p {
+        font-size: 1.4rem;
+    }
+}

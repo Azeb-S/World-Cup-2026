@@ -4,7 +4,13 @@ function Header() {
  return (
   <header className="header">
    <div className="header-left">
-    <img src="/logo.png" alt="logo" className="logo" />
+    <div className="logo-wrapper">
+     <img
+      src={`${import.meta.env.BASE_URL}logo.png`}
+      alt="FIFA World Cup 2026 logo"
+      className="logo"
+     />
+    </div>
 
     <div className="logo-text">
      <h1>FIFA WORLD CUP</h1>
