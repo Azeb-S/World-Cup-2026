@@ -70,7 +70,7 @@ export const teams = [
 import BMO from '../assets/Stadiums/BMO.jpg'
 import Azteca from '../assets/Stadiums/Estadio-Azteca.jpg'
 import MetLife from '../assets/Stadiums/MetLife.jpg'
-import SoFi from '../assets/Stadiums/SoFi.jpg'
+import SoFi from '../assets/Stadiums/Sofi.jpg'
 
 export const stadiums = [
   {
