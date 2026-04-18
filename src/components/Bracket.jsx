@@ -18,13 +18,13 @@ function Bracket() {
   const rounds = ["ROUND OF 32", "ROUND OF 16", "QUARTER FINALS", "SEMI FINALS", "FINAL"]
 
   const getRoundData = () => {
-    switch(currentRound) {
+    switch (currentRound) {
       case 0: return { matches: roundOf32, winners: r32Winners, setWinners: setR32Winners }
       case 1: return { matches: roundOf16, winners: r16Winners, setWinners: setR16Winners }
       case 2: return { matches: quarterFinals, winners: qfWinners, setWinners: setQfWinners }
       case 3: return { matches: semiFinals, winners: sfWinners, setWinners: setSfWinners }
       case 4: return { matches: final, winners: [champion], setWinners: (w) => setChampion(w[0]) }
-      default: return { matches: [], winners: [], setWinners: () => {} }
+      default: return { matches: [], winners: [], setWinners: () => { } }
     }
   }
 
